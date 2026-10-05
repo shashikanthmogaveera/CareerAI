@@ -1,0 +1,54 @@
+╔══════════════════════════════════════════════════════════╗
+║           CareerAI - How to Run                         ║
+╚══════════════════════════════════════════════════════════╝
+
+REQUIREMENTS
+────────────
+  • Python 3.9+   →  https://www.python.org/downloads/
+                     ⚠ Tick "Add Python to PATH" during install
+  • Node.js 18+   →  https://nodejs.org/
+
+
+FIRST TIME ONLY
+───────────────
+  Double-click:  INSTALL_DEPS.bat
+  This creates the Python virtual environment and installs
+  all Python + Node.js packages (~2-5 minutes).
+
+
+EVERY DAY
+─────────
+  Double-click:  START_PROJECT.bat
+    → Opens two server windows (backend + frontend)
+    → Automatically opens http://localhost:3000 in your browser
+
+  To stop:
+  Double-click:  STOP_PROJECT.bat
+
+
+URLS
+────
+  Frontend  →  http://localhost:3000
+  Backend   →  http://localhost:5000
+
+
+ALTERNATIVE (PowerShell)
+────────────────────────
+  Right-click START_PROJECT.ps1 → "Run with PowerShell"
+  Right-click STOP_PROJECT.ps1  → "Run with PowerShell"
+
+  If you get a script execution error, run this once in
+  PowerShell as Administrator:
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+TROUBLESHOOTING
+───────────────
+  Port already in use?
+    Run STOP_PROJECT.bat first, then START_PROJECT.bat.
+
+  Python packages missing?
+    Run INSTALL_DEPS.bat again.
+
+  npm errors?
+    Delete the node_modules folder and run INSTALL_DEPS.bat.
